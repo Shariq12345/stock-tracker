@@ -3,6 +3,8 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
+import { Toaster } from "@/components/ui/sonner";
+
 export const metadata: Metadata = {
   title: "FinTrack - Track Stock Prices Effortlessly",
   description: "Effortlessly track stock prices with FinTrack",
@@ -22,6 +24,7 @@ export default function RootLayout({
         className={`${GeistSans.className} ${GeistMono.className} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

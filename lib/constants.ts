@@ -1,7 +1,7 @@
 export const NAV_ITEMS = [
   { href: "/", label: "Dashboard" },
   { href: "/search", label: "Search" },
-  // { href: '/watchlist', label: 'Watchlist' },
+  { href: "/watchlist", label: "Watchlist" },
 ];
 
 // Sign-up form select options
@@ -169,8 +169,6 @@ export const MARKET_DATA_WIDGET_CONFIG = {
     },
   ],
 };
-
-
 
 export const SYMBOL_INFO_WIDGET_CONFIG = (symbol: string) => ({
   symbol: symbol.toUpperCase(),
